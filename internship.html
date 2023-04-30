@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>courses</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="D:\kamava technology internship\Apni PATHSALA\theme\css\style.css" rel="stylesheet">
+    <link href="D:\kamava technology internship\Apni PATHSALA\theme\css\style.css.map" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
+    <link rel="icon" href="images/logo2.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="fixed-top header">
+        <!-- top header -->
+        <!-- navbar -->
+        <div class="navigation w-100">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                    <a class="navbar-brand" href="home.html"><img src="images/logo2.png" alt="logo"></a>
+                    <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse"
+                        data-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav ml-auto text-center">
+                            <li class="nav-item active">
+                                <a class="nav-link"
+                                    href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item @@about">
+                                <a class="nav-link"
+                                    href="about.html">About</a>
+                            </li>
+                            <li class="nav-item @@courses">
+                                <a class="nav-link"
+                                    href="course.html">COURSES</a>
+                            </li>
+                            <li class="nav-item @@courses">
+                                <a class="nav-link"
+                                    href="internship.html">INTERNSHIP</a>
+                            </li>
+                            <li class="nav-item @@courses">
+                                <a class="nav-link"
+                                    href="project.html">PROJECT</a>
+                            </li>
+                            <li class="nav-item @@courses">
+                                <a class="nav-link"
+                                    href="contactus.html">Contact
+                                    Us</a>
+                            </li>
+                            <li class="nav-item @@contact">
+                                <a class="nav-link"
+                                    href="sign.html">SIGN
+                                    IN</a>
+                            </li>
+                            <li class="nav-item @@search">
+                                <i class="fa-sharp fa-solid fa-magnifying-glass nav-link" id="search-box"></i>
+
+                            </li>
+                            <form action="" class="search-form">
+                                <input type="search" placeholder="Search here..." id="input-box">
+
+                            </form>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+        integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center">
+                        <ul class="col container-filter portfolioFilte list-unstyled mb-0" id="filter">
+                            <li><a data-aos="zoom-in" data-aos-duration="3000" class="categories active"
+                                    data-filter="*">All</a></li>
+                            <li><a data-aos="zoom-in" data-aos-duration="3000" class="categories"
+                                    data-filter=".branding">web Development</a></li>
+                            <li><a data-aos="zoom-in" data-aos-duration="3000" class="categories"
+                                    data-filter=".design">Design</a></li>
+                            <li><a data-aos="zoom-in" data-aos-duration="3000" class="categories"
+                                    data-filter=".photo">Hacking</a></li>
+                            <li><a data-aos="zoom-in" data-aos-duration="3000" class="categories"
+                                    data-filter=".coffee">Intreview</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port portfolio-masonry mt-4">
+                <div class="portfolioContainer row photo">
+                    <div class="col-lg-4 p-4 ">
+                        <div class="item-box">
+                            <a class="mfp-image" href="topic.html" title="Project Name">
+                                <img data-aos="zoom-in" data-aos-duration="3000" class="item-container img-fluid"
+                                    src="images/1.jpg" alt="work-img">
+                                <p data-aos="fade-up" data-aos-duration="3000">Interview Preparation SQL Series</p>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-4 branding coffee">
+                        <div class="item-box">
+                            <a class="mfp-image" href="topic.html" title="Project Name">
+                                <img data-aos="zoom-in" data-aos-duration="3000" class="item-container img-fluid"
+                                    src="images/2.jpg" alt="work-img">
+                                <p data-aos="fade-up" data-aos-duration="3000">Interview ready Python Bootcamp</p>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-4 branding photo">
+                        <div class="item-box">
+                            <a class="mfp-image" href="topic.html" title="Project Name">
+                                <img data-aos="zoom-in" data-aos-duration="3000" class="item-container img-fluid"
+                                    src="images/3.jpg" alt="work-img">
+                                <p data-aos="fade-up" data-aos-duration="3000">Data Analytics Bootcamp</p>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-4 branding design photo">
+                        <div class="item-box">
+                            <a class="mfp-image" href="home.html" title="Project Name">
+                                <img data-aos="zoom-in" data-aos-duration="3000" class="item-container img-fluid"
+                                    src="images/4.jpg" alt="work-img">
+                                <p data-aos="fade-up" data-aos-duration="3000">Coming Soon</p>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-4 design photo">
+                        <div class="item-box">
+                            <a class="mfp-image" href="home.html" title="Project Name">
+                                <img data-aos="zoom-in" data-aos-duration="3000" class="item-container img-fluid"
+                                    src="images/4.jpg" alt="work-img">
+                                <p data-aos="fade-up" data-aos-duration="3000">Coming Soon</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-4 branding design coffee">
+                        <div class="item-box">
+                            <a class="mfp-image" href="home.html" title="Project Name">
+                                <img data-aos="zoom-in" data-aos-duration="3000" class="item-container img-fluid"
+                                    src="images/4.jpg" alt="work-img">
+                                <p data-aos="fade-up" data-aos-duration="3000">Coming Soon</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-4 branding design">
+                        <div class="item-box">
+                            <a class="mfp-image" href="home.html" title="Project Name">
+                                <img data-aos="zoom-in" data-aos-duration="3000" class="item-container img-fluid"
+                                    src="images/4.jpg" alt="work-img">
+                                <p data-aos="fade-up" data-aos-duration="3000">Coming Soon</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-4 branding design photo coffee">
+                        <div class="item-box">
+                            <a class="mfp-image" href="home.html" title="Project Name">
+                                <img data-aos="zoom-in" data-aos-duration="3000" class="item-container img-fluid"
+                                    src="images/4.jpg" alt="work-img">
+                                <p data-aos="fade-up" data-aos-duration="3000">Coming Soon</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 p-4 branding design photo coffee">
+                        <div class="item-box">
+                            <a class="mfp-image" href="home.html" title="Project Name">
+                                <img data-aos="zoom-in" data-aos-duration="3000" class="item-container img-fluid"
+                                    src="images/4.jpg" alt="work-img">
+                                <p data-aos="fade-up" data-aos-duration="3000">Coming Soon</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <style type="text/css">
+        body {
+            margin-top: 20px;
+            background-color: rgb(240, 234, 234);
+        }
+
+        .container-filter {
+            margin-top: 200;
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 30px;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container-filter li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .container-filter a {
+            display: block;
+            font-size: 16px;
+            margin: 10px 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: 900;
+            line-height: 30px;
+            --webkit-transition: all 0.6s;
+            border-bottom: 1px solid transparent;
+            color: #000080 !important;
+        }
+
+        .container-filter a:hover {
+            color: #222222 !important;
+        }
+
+        .container-filter a.active {
+            color: #222222 !important;
+            border-bottom: 1px solid #222222;
+        }
+
+        .item-box {
+            position: relative;
+            overflow: hidden;
+            display: block;
+        }
+
+        .item-box a {
+            display: inline-block;
+        }
+
+        .item-box .item-mask {
+            background: none repeat scroll 0 0 rgba(235, 228, 228, 0.9);
+            position: absolute;
+            transition: all 0.5s ease-in-out 0s;
+            -moz-transition: all 0.5s ease-in-out 0s;
+            -webkit-transition: all 0.5s ease-in-out 0s;
+            -o-transition: all 0.5s ease-in-out 0s;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .item-box .item-mask .item-caption {
+            position: absolute;
+            width: 100%;
+            bottom: 10px;
+            opacity: 0;
+        }
+
+        .item-box:hover .item-mask {
+            opacity: 1;
+            visibility: visible;
+            cursor: pointer !important;
+        }
+
+        .item-box:hover .item-caption {
+            opacity: 1;
+        }
+
+        .item-box:hover .item-container {
+            width: 100%;
+        }
+
+        .port a p {
+            padding-top: 15px;
+            font-weight: 600;
+        }
+
+        .port a p:hover {
+            color: #000080;
+            font-size: 15.5px;
+        }
+
+        .services-box {
+            padding: 45px 25px 45px 25px;
+        }
+
+        .search-form {
+            position: absolute;
+            top: 120%;
+            right: -105%;
+
+            width: 15rem;
+            height: 2.2rem;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+        }
+
+        .search-form.active {
+            right: .1rem;
+            opacity: 1;
+            transition: .4s linear;
+        }
+
+        .search-form input {
+            width: 100%;
+            padding: 0.3rem 1rem;
+            font-size: 1rem;
+            color: black;
+            text-transform: none;
+            border: solid .1rem #000080;
+            border-radius: 0.5rem;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            var $container = $('.portfolioContainer');
+            var $filter = $('#filter');
+            $container.isotope({
+                filter: '*',
+                layoutMode: 'masonry',
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear'
+                }
+            });
+            $filter.find('a').click(function () {
+                var selector = $(this).attr('data-filter');
+                $filter.find('a').removeClass('active');
+                $(this).addClass('active');
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {
+                        animationDuration: 750,
+                        easing: 'linear',
+                        queue: false,
+                    }
+                });
+                return false;
+            });
+        });
+        let searchForm = document.querySelector('.search-form');
+
+        document.querySelector('#search-box').onclick = () => {
+            searchForm.classList.toggle('active');
+            navbar.classList.remove('active');
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Apni Pathsala-login</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300,600" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel="stylesheet" href="css/sign.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div data-aos="zoom-in" data-aos-duration="3000"class="container">
+   <section id="formHolder">
+
+      <div class="row">
+
+         <!-- Brand Box -->
+         <div class="col-sm-6 brand">
+            <a href="#" class="logo">Apni Pathsala <span>.</span></a>
+
+            <div class="heading">
+               <h2>PATHSALA</h2>
+               <p>Apki Apne Padhai</p>
+            </div>
+
+            <div class="success-msg">
+               <p>Great! You are one of our members now</p>
+               <a href="#" class="profile">Your Profile</a>
+            </div>
+         </div>
+
+
+         <!-- Form Box -->
+         <div class="col-sm-6 form">
+
+            <!-- Login Form -->
+            <div class="login form-peice switched">
+               <form class="login-form" action="#" method="post" name="google-sheet">
+                  <div class="form-group">
+                     <label for="loginemail">Email Adderss</label>
+                     <input autocomplete="off" type="email" name="loginemail" id="loginemail" required>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="loginPassword">Password</label>
+                     <input autocomplete="off" type="password" name="loginPassword" id="loginPassword" required>
+                  </div>
+
+                  <div class="CTA">
+                     <input type="submit" value="Login" name="login">
+                     <a href="#" class="switch">I'm New</a>
+                  </div>
+               </form>
+            </div><!-- End Login Form -->
+
+
+            <!-- Signup Form -->
+            <div class="signup form-peice">
+               <form class="signup-form" action="#" method="post">
+
+                  <div class="form-group">
+                     <label for="name">Full Name</label>
+                     <input autocomplete="off" type="text" name="username" id="name" class="name">
+                     <span class="error"></span>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="email">Email Adderss</label>
+                     <input autocomplete="off" type="email" name="emailAdress" id="email" class="email">
+                     <span class="error"></span>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="phone">Phone Number - <small>Optional</small></label>
+                     <input autocomplete="off" type="text" name="phone" id="phone">
+                  </div>
+
+                  <div class="form-group">
+                     <label for="password">Password</label>
+                     <input autocomplete="off" type="password" name="password" id="password " class="pass">
+                     <span class="error"></span>
+                  </div>
+
+                  <div class="form-group">
+                     <label for="passwordCon">Confirm Password</label>
+                     <input autocomplete="off" type="password" name="passwordCon" id="passwordCon" class="passConfirm">
+                     <span class="error"></span>
+                  </div>
+
+                  <div class="CTA">
+                     <input type="submit" value="Signup Now" id="submit">
+                     <a href="#" class="switch">I have an account</a>
+                  </div>
+               </form>
+            </div><!-- End Signup Form -->
+         </div>
+      </div>
+
+   </section>
+</div>
+<script>
+   const scrptURL = "https://script.google.com/macros/s/AKfycbxA5RRsmtqClQxuVp5Xwm75MrSUVEj5cCTfo6LC01WjWXdwDLyP_ArpgEdddyBuo-4G8g/exec"
+   const form = document.form["google-sheet"]
+   form.addEventListener('login',e =>{
+      e.preventDefault()
+      fetch(scriptURL, { method:'post',body: new FormData(form)})
+      .then(response => alert("Thanks for Login"))
+      .catch(error=> console.error('Error',error.message))
+   })
+</script>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="js/sign.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+   AOS.init();
+ </script>
+</body>
+</html>

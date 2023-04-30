@@ -1,0 +1,200 @@
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <div class="heading">
+            <div class="logo">
+              <span class="logo-part">M</span>ultiplyer
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="navbar-collapse collapse" style="height: 1px;">
+        <ul class="custom nav navbar-nav navbar-right">
+          <li>
+            <div class="search">
+              <input type="search" class="search-bar" placeholder="Search..." style="font-weight:600;font-size:15px">
+              <i class="fa fa-search search-icon"></i>
+            </div>
+          </li>
+          <li title="Dashboard"><a href="#">Dashboard</a></li>
+          <li><a href="#"><span class="fa fa-cog">Settings</span></a></li>
+          <li class="active" title="Profile"><a href="#"><span class="fa fa-user">Profile</span></a></li>
+          <li title="Help"><a href="#"><span class="fa fa-question">Help</span></a></li>
+          <li title="Logout"><a href="#"><span class="fa fa-sign-out">Logout</span></a></li>
+        </ul>
+  
+  
+        <!--                <div class ="search">
+                      <input type="search" class="search-bar" placeholder="Search..." style="font-weight:600;font-size:15px">
+                      <i class="fa fa-search search-icon"></i>
+                  </div>-->
+      </div>
+    </div>
+  </div>
+  
+  <div class="wrapper">
+    <div class="profile">
+      <div class="content">
+        <h1>Edit Profile</h1>
+        <form action="">
+          <!-- Photo -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="avatar">Your Photo</label>
+            </div>
+            <div class="grid-65">
+              <span class="photo" title="Upload your Avatar!"></span>
+              <input type="file" class="btn" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="grid-35">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="fname" tabindex="1" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="grid-35">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="lname" tabindex="2" />
+            </div>
+          </fieldset>
+          <!-- Description about User -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="description">About you</label>
+            </div>
+            <div class="grid-65">
+              <textarea name="" id="" cols="30" rows="auto" tabindex="3"></textarea>
+            </div>
+          </fieldset>
+          <!-- Location -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="location">Location</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="location" tabindex="4" />
+            </div>
+          </fieldset>
+          <!-- Country -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="country">Country</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="country" tabindex="5" />
+            </div>
+          </fieldset>
+          <!-- Email -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="email">Email Address</label>
+            </div>
+            <div class="grid-65">
+              <input type="email" id="email" tabindex="6" />
+            </div>
+          </fieldset>
+          <!-- Looking for Work -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="forHire">Looking for Work</label>
+            </div>
+            <div class="grid-65">
+              <select name="work" id="forHire" tabindex="7">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+              </select>
+            </div>
+          </fieldset>
+          <!-- Highest Qualification -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="qualification">Highest level of Education</label>
+            </div>
+            <div class="grid-65">
+              <select name="qualification" id="qualification" tabindex="8">
+                <option selected="selected" value="--------------" disabled>--------------</option>
+                <option value="primary_school">Primary school or equivalent</option>
+                <option value="high_school">High school or equivalent</option>
+                <option value="associate">Associate degree or equivalent</option>
+                <option value="bachelors">Bachelor's degree or equivalent</option>
+                <option value="post_graduate">Post-graduate or equivalent</option>
+              </select>
+            </div>
+          </fieldset>
+          <!-- School -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="school">School Name</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="school" tabindex="9" />
+            </div>
+          </fieldset>
+          <!-- Company Name -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="company">Company Name</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="company" tabindex="10" />
+            </div>
+          </fieldset>
+          <!-- Job Position -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="position">Job Title</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="position" tabindex="11" />
+            </div>
+          </fieldset>
+          <!-- Linkedin URL -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="linkedin">LinkedIn URL</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="linkedin" tabindex="12" />
+            </div>
+          </fieldset>
+          <!-- Github URL -->
+          <fieldset>
+            <div class="grid-35">
+              <label for="github">Github URL</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="github" tabindex="13" />
+            </div>
+          </fieldset>
+          <!-- Website URL -->
+          <fieldset style="border-bottom: none;">
+            <div class="grid-35">
+              <label for="website">Website URL</label>
+            </div>
+            <div class="grid-65">
+              <input type="text" id="website" tabindex="13" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <input type="button" class="Btn cancel" value="Cancel" />
+            <input type="submit" class="Btn" value="Save Changes" />
+          </fieldset>
+  
+        </form>
+      </div>
+    </div>
+  </div>
+  
