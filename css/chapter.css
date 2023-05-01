@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+#search{
+    width: 20rem;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 0.0625rem solid black;
+    padding: .375rem 1.875rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+
+}
+#search input{
+    width: 14.1rem;
+    margin-left: 1rem;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+.main-btn{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(194, 76, 76);
+    text-decoration: uppercase;
+    background-color: transparent;
+    border: 0.0625rem solid black;
+    padding: .375rem 1.875rem;
+    border-radius: 3.125rem;
+    line-height: 1.75rem;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+.header_wrapper .navbar{
+    padding: .9375rem 0;
+    background-color: var(--bg-white);
+    -webkit-transition: 0 .5rem .375rem -0.375rem rgb(0 0 0/ 40%);
+    box-shadow: 0 .5rem .375rem -0.375rem rgb(0 0 0/ 40%);
+    -webkit-transition: background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
+    transition: background 0s ease-in-out 0s, margin-top 0s ease-in-out 0s, opacity 0s ease-in-out 0s;
+}
+.header_wrapper .navbar-toggler{
+    border: 0;
+    color: var(--primary-text);
+    line-height: 2;
+}
+.header_wrapper .navbar-brand img{
+    max-width: 6rem;
+    height: auto;
+}
+.header_wrapper .navbar-toggler:focus{
+    box-shadow: none;
+}
+.header_wrapper .nav-item{
+    margin: 0 .625rem;
+}
+.header_wrapper .nav-item .nav-link{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--primary-text);
+    display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link:hover,
+.header_wrapper .nav-item .nav-link:active{
+    color: var(--secondary-color);
+}
+
+.navbar.header-scrolled{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color:white;
+    -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+@keyframes fadeInDown{
+    0%{
+        top:-30%
+    }
+    50%{
+        top: -15%;
+    }
+    100%{
+        top: 0;
+    }
+}
+@media(max-width: 1199px){
+   
+
+    .header_wrapper .navbar-expand-lg .navbar-nav{
+        align-items: center;
+    }
+    .header_wrapper .navbar-expand-lg .navbar-nav .nav-link{
+        padding: 0;
+        font-size: .875rem;
+    }
+    .main-btn{
+        font-size: .875rem;
+    }
+    
+
+}
+@media (max-width:991px) {
+    #search{
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .header_wrapper .menu-navbar-nav{
+        text-align: center;
+        padding-bottom: .9375rem;
+    }
+    .header_wrapper .nav-item .nav-link{
+        margin-top: .9375rem;
+    }
+   
+}
+#playlist{
+    margin-top: 2rem;
+    box-sizing: border-box;
+    
+}
+
+.containere {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1.8fr 1.2fr;
+    gap: 1rem;
+    margin-top: 10rem;
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 990px) {
+    .containere {
+        grid-template-columns: 1fr;
+    }
+}
+.main-video{
+    width: 110%;
+    height: 40rem;
+    padding-right: 9rem;
+}
+.video-playlist {
+    
+    width: 100%;
+    height: fit-content;
+   
+}
+
+.main-video .title {
+    margin-top: 1rem;
+}
+
+.video-playlist .title {
+    padding-left: 1rem;
+}
+
+.video-playlist > p {
+    padding: 1rem;
+    color: var(--secondary);
+}
+
+.video-playlist .videos{
+    height: 70%;
+    overflow-y: auto;
+}
+
+.video-playlist .videos::-webkit-scrollbar {
+    width: .4rem;
+    border-radius: .4rem;
+    background-color: #0005;
+}
+
+.video-playlist .videos::-webkit-scrollbar-thumb {
+    border-radius: .4rem;
+    background-color: #fff;
+}
+
+.video-playlist .videos .video {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    margin-top: .1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.video-playlist .videos .video:hover {
+    background-color: #0003;
+}
+
+.video-playlist .videos .video.active {
+    background-color: #0003;
+    color: var(--secondary);
+}
+
+.main-video video {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.video img {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 1.5rem;
+    height: 1.5rem;
+    
+    filter: invert(100%);
+}
+
+.video-playlist .videos .video.active img {
+    filter: invert(100%) sepia(100%) saturate(2000%) hue-rotate(360deg);
+}
+
+.video p {
+   margin-left: 2.5rem;
+}
+
+.video h3 {
+    width: 23rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font: 100 1rem sans-serif;
+    padding: 0 .5rem;
+}

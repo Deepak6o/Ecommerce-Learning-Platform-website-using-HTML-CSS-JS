@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+  box-sizing: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  margin-top: 5rem;
+  padding-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+
+.section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+
+@media (max-width: 768px) {
+  .section-header p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.contact .info-box {
+  color: #444444;
+  background: #fafbff;
+  padding: 45px;
+  margin-bottom: 2rem;
+}
+
+.contact .info-box:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0px 2px 7px 0 black;
+}
+
+.contact .info-box i {
+  font-size: 38px;
+  line-height: 0;
+  color: #4154f1;
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #012970;
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.contact .frm:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: 0px 2px 7px 0 black;
+}
+
+.contact .php-email-form {
+  background: #fafbff;
+  padding: 30px;
+  height: 100%;
+
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #4154f1;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+  margin-bottom: 1rem;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+.contact .php-email-form label,
+.contact .php-email-form .captcha label{
+  display: block;
+  font-size: 15px;
+  color: #111;
+  margin-bottom: 5px;
+}
+.contact .php-email-form .captcha{
+  margin: 15px 0px;
+}
+.contact .php-email-form .captcha .preview{
+  color: #555;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  letter-spacing: 8px;
+  border: 1px solid #888;
+  font-family: "monospace";
+}
+.contact .php-email-form .captcha .preview span{
+  display: inline-block;
+  user-select: none;
+}
+.contact .php-email-form .captcha .captcha-form{
+  display: flex;
+}
+.contact .php-email-form .captcha .captcha-form input{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #888;
+}
+.contact .php-email-form .captcha .captcha-form .captcha-refresh{
+  width: 40px;
+  border: none;
+  outline: none;
+  background-color: #888;
+  color: #eee;
+  cursor: pointer;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #4154f1;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #5969f3;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.services-box {
+  padding: 45px 25px 45px 25px;
+}
+
+
+.search-form {
+  position: absolute;
+  top: 120%;
+  right: -105%;
+
+  width: 15rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+}
+
+
+.search-form.active {
+  right: .1rem;
+  opacity: 1;
+  transition: .4s linear;
+
+}
+
+.search-form input {
+  width: 100%;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: black;
+  text-transform: none;
+  border: solid .1rem #000080;
+  border-radius: 0.5rem;
+}
+.login-form {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:90%;
+  max-width:450px;
+  background:#fff;
+  padding:20px 30px;
+  box-shadow:0px 5px 10px rgba(0,0,0,0.1);
+}
+.login-form .form-title {
+  font-family:"Montserrat",sans-serif;
+  text-align:center;
+  font-size:30px;
+  font-weight:600;
+  margin:20px 0px 30px;
+  color:#111;
+}
+.login-form .form-input {
+  margin:10px 0px;
+}
+.login-form .form-input label,
+.login-form .captcha label {
+  display:block;
+  font-size:15px;
+  color:#111;
+  margin-bottom:5px;
+}
+.login-form .form-input input {
+  width:100%;
+  padding:10px;
+  border:1px solid #888;
+  font-size:15px;
+}
+.login-form .captcha {
+  margin:15px 0px;
+}
+.login-form .captcha .preview {
+  color:#555;
+  width:100%;
+  text-align:center;
+  height:40px;
+  line-height:40px;
+  letter-spacing:8px;
+  border:1px dashed #888;
+  font-family:"monospace";
+}
+.login-form .captcha .preview span {
+  display:inline-block;
+  user-select:none;
+}
+.login-form .captcha .captcha-form {
+  display:flex;
+}
+.login-form .captcha .captcha-form input {
+  width:100%;
+  padding:8px;
+  border:1px solid #888;
+}
+.login-form .captcha .captcha-form .captcha-refresh {
+  width:40px;
+  border:none;
+  outline:none;
+  background:#888;
+  color:#eee;
+  cursor:pointer;
+}
+.login-form #login-btn {
+  margin-top:5px;
+  width:100%;
+  padding:10px;
+  border:none;
+  outline:none;
+  font-size:15px;
+  text-transform:uppercase;
+  background:#4c81ff;
+  color:#fff;
+  cursor:pointer;
+}
